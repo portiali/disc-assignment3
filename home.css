@@ -1,0 +1,101 @@
+body {
+    background-color: #24333C;
+    display: flex;
+}
+
+.navbar {
+    display: flex;
+    height: 100vh;
+}
+
+
+/* Make the nav items container flexible and take available space */
+.nav-items {
+    display: flex;
+    flex-direction: column;
+    /* flex-grow: 1;  */
+    /*Take up remaining space */
+    padding: 30px;
+    /* Optional padding for spacing */
+    width: 100px;
+}
+
+.nav-items a {
+    display: flex;
+    padding: 20px;
+    font-size: 20px;
+    margin-left: 3px;
+    color: white;
+}
+
+.nav-items h2 {
+    font-family: major;
+    color: #FFFFFF;
+    margin-bottom: 40px;
+    margin-top: 0;
+    font-size: 30px;
+    display: flex;
+    /* keeps all text on 1 line*/
+    white-space: nowrap;
+}
+
+.nav-items a i {
+    margin-right: 10px;
+    font-size: 26px;
+
+}
+
+.vertical-line {
+    border-left: 2px solid #ccc;
+    /* Creates the vertical line */
+    height: 100%;
+    /* Sets the height of the line */
+    margin-left: 100px;
+    margin-right: 250px;
+}
+
+.nav-items a:nth-of-type(5) {
+    margin-top: auto;
+    white-space: nowrap;
+
+}
+
+
+.post-container {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.post img {
+    width: 300px;
+    height: 250px;
+    object-fit: cover;
+    margin: 0;
+}
+
+.post p {
+    margin-top: 30px;
+    color: #FFFFFF
+}
+
+.arrow-left {
+    color: #FFFFFF;
+    top: 50%;
+    position: absolute;
+    font-size: 30px;
+    cursor: pointer;
+
+}
+
+/* 
+.arrow-left {
+  position: absolute;
+  top: 50%;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+  z-index: 10; /* Ensures arrows stay on top of the grid */
+/* transform: translateY(-50%); */
+/* }
